@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: PallyPowerTW
+## Title: PallyPower |cff7fff7f - Project Legacy|r
 ## Author: ivanovlk | a Project Legacy fork by ziq
 ## Version: 1.40
 ## Notes: A Pally blessings helper
