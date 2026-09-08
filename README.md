@@ -18,7 +18,7 @@ Download the zip file and rename to PallyPower, or use the Project Legacy WoW La
 
 ## Usage
 
-Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a normal (10 min) blessing. If individual blessings are assigned, right-click applies those instead.
+Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a normal (5 min) blessing. If individual blessings are assigned, right-click applies those instead.
 
 ## Slash Commands
 
