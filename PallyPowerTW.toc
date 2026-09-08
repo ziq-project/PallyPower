@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: PallyPowerTW
-## Author: ivanovlk
+## Author: ivanovlk | a Project Legacy fork by ziq
 ## Version: 1.40
 ## Notes: A Pally blessings helper
 ## Notes-deDE: Ein Paladin-Segen-Helfer
