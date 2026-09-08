@@ -1,20 +1,20 @@
 # PallyPower
 
-Paladin blessing, aura, and seal management addon for WoW 1.12 / TurtleWoW. Coordinates assignments across multiple Paladins in a raid, tracks buff status per class, and provides one-click Greater/regular blessing casting.
+Paladin blessing, aura, and seal management addon for WoW 1.12. Coordinates assignments across multiple Paladins in a raid, tracks buff status per class, and provides one-click Greater/regular blessing casting.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/ivanovlk/PallyPower/refs/heads/master/ScreenShot.png" float="left" align="left" width="100%">
+<img src="https://raw.githubusercontent.com/ivanovlk/PallyPowerTW/refs/heads/master/ScreenShot.png" float="left" align="left" width="100%">
 
 *Main assignment UI*
 
-<img src="https://raw.githubusercontent.com/ivanovlk/PallyPower/refs/heads/master/ScreenShotAura.png">
+<img src="https://raw.githubusercontent.com/ivanovlk/PallyPowerTW/refs/heads/master/ScreenShotAura.png">
 
 *BuffBar horizontal layout with hidden default Aura frame*
 
 ## Installation
 
-Download the zip file and rename to PallyPower, or use the Turtle WoW Launcher.
+Download the zip file and rename to PallyPower, or use the Project Legacy WoW Launcher.
 
 ## Usage
 
@@ -61,7 +61,6 @@ Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a n
 
 ## Known Issues
 
-- "[Patch FR] Turtle WoW en francais + Pack de voix francaise corrige pour VoiceOver" is not supported. PallyPower does not work correctly when this mod is installed.
 
 ## Notes
 
@@ -69,16 +68,7 @@ Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a n
 
 ## Additional Resources
 
-[PallyPower Addon Wiki](https://github.com/ivanovlk/PallyPower/wiki/PallyPower-Addon-Wiki)
+[PallyPower Addon Wiki](https://github.com/ivanovlk/PallyPowerTW/wiki/PallyPower-Addon-Wiki)
 
 ## Changelog
-- 09.04.26 - Add paladin selector to Assignment Grid top-left area. This way you can display specific paladin's individual blessings assignment (fix for feature request #25) 
-- 01.03.26 - Event-driven scanning replaces timer-based polling (zero CPU cost when idle). TurtleWoW realm detection for correct blessing durations (also vanilla 1.12.1 compatible). New `/pp lock` slash command for toggling frame positions. Scan frequency repurposed as UI debounce interval (clamped to max 2s). Removed obsolete "Poll Per Frame" setting. Slash commands documented in README.
-- 25.08.25 - If Salvation is assigned, user is tank, and no individual blessings, do not count against need (so the BuffBar button stays green even with tank missing Salvation).
-- 25.08.25 - Assign/clear raid icon when player is marked as tank if we are Raid Leader/Assist or party leader.
-- 22.08.25 - Allow assignments of seals for each paladin.
-- 22.08.25 - Mark as tank reflects to pfUI tank assignment (if available). Don't allow GB on pets if Warriors assignment differs from pets assignment. If same assignment, mark both as GB-blessed.
-- 09.08.25 - Warriors and hunter pets share same class so if they have same blessing assigned and you cast Greater Blessing, PP marks both Warriors and pets as blessed in BuffBar.
-- 15.07.25 - Fix: When casting Greater Blessings and several targets are out of range, addon assumes they got the buff and does not allow re-cast of GB. Now those targets are correctly marked as needing blessing and allow re-cast of GB.
-- 15.07.25 - Aura assignment is also saved in presets.
-- 15.07.25 - Allow marking a player as a tank and sync with other paladins.
+
