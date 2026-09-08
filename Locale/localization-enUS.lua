@@ -70,7 +70,7 @@ PallyPower_Credits1 = "Pally Power - by ivanovlk"
 PallyPower_Credits2 = "Version "..PallyPower_Version
 PallyPower_Credits3 = ""
 PallyPower_Credits4 = "Original update by Hjorim / Sneakyfoot / Rake / Xerron / Azgaardian / Aznamir"
-PallyPower_Credits5 = "Updated version for Turtle WoW including Pets and other improvements by ivanovlk"
+PallyPower_Credits5 = "Updated version including Pets and other improvements by ivanovlk"
 
 -- Buff name, Class Name
 PallyPower_CouldntFind = "Couldn't find a target for %s on %s!"

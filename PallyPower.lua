@@ -1,10 +1,17 @@
 local initialized = false
 
-local TURTLE_REALMS = { Nordanaar=true, ["Tel'Abim"]=true, Ambershire=true, ["South Seas"]=true}
-local IS_TURTLE = TURTLE_REALMS[GetRealmName()] or false
-
-PALLYPOWER_GREATERBLESSINGDURATION = IS_TURTLE and (30 * 60) or (15 * 60)
-PALLYPOWER_NORMALBLESSINGDURATION = IS_TURTLE and (10 * 60) or (5 * 60)
+-- Project Legacy is vanilla 1.12.1 -- always use the real vanilla blessing
+-- durations (Greater Blessing 15 min, regular Blessing 5 min), never the
+-- longer Turtle WoW ones. Per user request (2026-09-08): the old
+-- TURTLE_REALMS/GetRealmName() detection below misclassified this server as
+-- Turtle WoW (Project Legacy's server software still reports one of
+-- Turtle's internal realm names, even though it's an unrelated project) and
+-- used the 30/10-minute Turtle durations instead of the correct 15/5-minute
+-- vanilla ones -- confirmed in-game by the user (buffs tracked as lasting
+-- far longer than they actually do, so PallyPower stopped prompting re-buffs
+-- long before blessings actually expired).
+PALLYPOWER_GREATERBLESSINGDURATION = 15 * 60
+PALLYPOWER_NORMALBLESSINGDURATION = 5 * 60
 PALLYPOWER_SKIPBLESSINGDURATION = 30
 PALLYPOWER_BLESSINGTRESHOLD = 60
 PALLYPOWER_RESTARTAUTOBLESS = 2 * 60
@@ -574,6 +581,14 @@ function PallyPower_OnEvent(event,arg1)
     end
 
     if event == "ADDON_LOADED" and arg1 == "PallyPower" then
+        -- CONFIRMED IN-GAME (user report, 2026-09-08): a client crash during
+        -- logout can leave PP_PerUser explicitly saved as literal "= nil"
+        -- (WoW faithfully serializes whatever's in memory at save time) --
+        -- both PallyPower_AdjustIcons (right below) and
+        -- PallyPower_InitConfig indexed it unguarded, throwing "attempt to
+        -- index global 'PP_PerUser' (a nil value)" and aborting this whole
+        -- ADDON_LOADED handler, so the addon never loaded at all.
+        PP_PerUser = PP_PerUser or {}
         PallyPower_AdjustIcons()
         PallyPower_MinimapButton_Init();
         PallyPower_InitConfig();   

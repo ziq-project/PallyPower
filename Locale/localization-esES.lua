@@ -70,7 +70,7 @@ if ( GetLocale() == "esES" ) then
     PallyPower_Credits2 = "Version "..PallyPower_Version
     PallyPower_Credits3 = ""
     PallyPower_Credits4 = "Actualización original by Hjorim / Sneakyfoot / Rake / Xerron / Azgaardian / Aznamir / Nuevemasnueve"
-    PallyPower_Credits5 = "Versión actualizada para Turtle WoW incluyendo mascotas y otras caraterísticas by ivanovlk"
+    PallyPower_Credits5 = "Versión actualizada incluyendo mascotas y otras caraterísticas by ivanovlk"
 
     -- Buff name, Class Name
     PallyPower_CouldntFind = "No hay objetivo para %s en %s!"
