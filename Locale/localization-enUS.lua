@@ -1,4 +1,4 @@
-PallyPower_Version = GetAddOnMetadata("PallyPowerTW", "Version")
+PallyPower_Version = GetAddOnMetadata("PallyPower", "Version")
 SLASH_PALLYPOWER1 = "/pp"
 SLASH_PALLYPOWER2 = "/pallypower"
 
@@ -141,7 +141,7 @@ PALLYPOWER_TEXT_WARNING_SAVE = "You are about to save changes to set '|cffffffff
 PALLYPOWER_MESSAGE_BB_CENTERED = "PallyPowerBuffBar centered on the screen."
 PALLYPOWER_MESSAGE_BB_NOTFOUND = "Frame PallyPowerBuffBar not found."
 
-PALLYPOWER_MESSAGE_NEWVERSION = "New version of PallyPowerTW available"
+PALLYPOWER_MESSAGE_NEWVERSION = "New version of PallyPower available"
 
 PALLYPOWER_FREEASSIGN = "Free Assignment"
 PALLYPOWER_FREEASSIGN_DESC = "Allow others to change your blessings without being Party Leader / Raid Assistant."

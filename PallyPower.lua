@@ -336,7 +336,7 @@ function PallyPower_OnUpdate(tdiff)
         LastCast[i] = k - tdiff
         if LastCast[i] <= 0 then
             if PP_PerUser.playsoundwhen0 == true then
-                PlaySoundFile("Interface\\Addons\\PallyPowerTW\\Sounds\\ding.mp3")
+                PlaySoundFile("Interface\\Addons\\PallyPower\\Sounds\\ding.mp3")
             end
             LastCast[i] = nil
         end
@@ -347,7 +347,7 @@ function PallyPower_OnUpdate(tdiff)
         LastCastPlayer[i] = k - tdiff
         if LastCastPlayer[i] <= 0 then
             if PP_PerUser.playsoundwhen0 == true then
-                PlaySoundFile("Interface\\Addons\\PallyPowerTW\\Sounds\\ding.mp3")
+                PlaySoundFile("Interface\\Addons\\PallyPower\\Sounds\\ding.mp3")
             end
             LastCastPlayer[i] = nil
         end
@@ -385,9 +385,9 @@ end
 function PallyPower_AdjustIcons()
     local icons_prefix
     if PP_PerUser.usehdicons == true then
-        icons_prefix = "AddOns\\PallyPowerTW\\HD"
+        icons_prefix = "AddOns\\PallyPower\\HD"
     else
-        icons_prefix = "AddOns\\PallyPowerTW\\"
+        icons_prefix = "AddOns\\PallyPower\\"
     end
 
     AuraIcons[0] = "Interface\\"..icons_prefix.."Icons\\Spell_Holy_DevotionAura"
@@ -573,7 +573,7 @@ function PallyPower_OnEvent(event,arg1)
         uiDirty = true
     end
 
-    if event == "ADDON_LOADED" and arg1 == "PallyPowerTW" then
+    if event == "ADDON_LOADED" and arg1 == "PallyPower" then
         PallyPower_AdjustIcons()
         PallyPower_MinimapButton_Init();
         PallyPower_InitConfig();   
@@ -1312,9 +1312,9 @@ function PallyPower_UpdateUI()
 
         local icons_prefix
         if PP_PerUser.usehdicons == true then
-            icons_prefix = "AddOns\\PallyPowerTW\\HD"
+            icons_prefix = "AddOns\\PallyPower\\HD"
         else
-            icons_prefix = "AddOns\\PallyPowerTW\\"
+            icons_prefix = "AddOns\\PallyPower\\"
         end
         
         local hasRF = false
@@ -1565,9 +1565,9 @@ function PallyPower_ScanSpells()
 
     local icons_prefix
     if PP_PerUser.usehdicons == true then
-        icons_prefix = "AddOns\\PallyPowerTW\\HD"
+        icons_prefix = "AddOns\\PallyPower\\HD"
     else
-        icons_prefix = "AddOns\\PallyPowerTW\\"
+        icons_prefix = "AddOns\\PallyPower\\"
     end
 
     while true do
@@ -3072,9 +3072,9 @@ end
 function PallyPower_GetBuffTextureID(text)
     local icons_prefix
     if PP_PerUser.usehdicons == true then
-        icons_prefix = "AddOns\\PallyPowerTW\\HD"
+        icons_prefix = "AddOns\\PallyPower\\HD"
     else
-        icons_prefix = "AddOns\\PallyPowerTW\\"
+        icons_prefix = "AddOns\\PallyPower\\"
     end
 
     for id, name in BuffIcon do
@@ -3742,9 +3742,9 @@ function PallyPower_CastSeal()
         -- Determine icon prefix (matches other checks in this file)
         local icons_prefix
         if PP_PerUser and PP_PerUser.usehdicons == true then
-            icons_prefix = "AddOns\\PallyPowerTW\\HD"
+            icons_prefix = "AddOns\\PallyPower\\HD"
         else
-            icons_prefix = "AddOns\\PallyPowerTW\\"
+            icons_prefix = "AddOns\\PallyPower\\"
         end
 
         -- If the player already has the seal buff active, don't re-cast

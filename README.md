@@ -1,20 +1,20 @@
-# PallyPowerTW
+# PallyPower
 
 Paladin blessing, aura, and seal management addon for WoW 1.12 / TurtleWoW. Coordinates assignments across multiple Paladins in a raid, tracks buff status per class, and provides one-click Greater/regular blessing casting.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/ivanovlk/PallyPowerTW/refs/heads/master/ScreenShot.png" float="left" align="left" width="100%">
+<img src="https://raw.githubusercontent.com/ivanovlk/PallyPower/refs/heads/master/ScreenShot.png" float="left" align="left" width="100%">
 
 *Main assignment UI*
 
-<img src="https://raw.githubusercontent.com/ivanovlk/PallyPowerTW/refs/heads/master/ScreenShotAura.png">
+<img src="https://raw.githubusercontent.com/ivanovlk/PallyPower/refs/heads/master/ScreenShotAura.png">
 
 *BuffBar horizontal layout with hidden default Aura frame*
 
 ## Installation
 
-Download the zip file and rename to PallyPowerTW, or use the Turtle WoW Launcher.
+Download the zip file and rename to PallyPower, or use the Turtle WoW Launcher.
 
 ## Usage
 
@@ -61,7 +61,7 @@ Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a n
 
 ## Known Issues
 
-- "[Patch FR] Turtle WoW en francais + Pack de voix francaise corrige pour VoiceOver" is not supported. PallyPowerTW does not work correctly when this mod is installed.
+- "[Patch FR] Turtle WoW en francais + Pack de voix francaise corrige pour VoiceOver" is not supported. PallyPower does not work correctly when this mod is installed.
 
 ## Notes
 
@@ -69,7 +69,7 @@ Left-click a buff bar button to cast a Greater Blessing. Right-click to cast a n
 
 ## Additional Resources
 
-[PallyPowerTW Addon Wiki](https://github.com/ivanovlk/PallyPowerTW/wiki/PallyPowerTW-Addon-Wiki)
+[PallyPower Addon Wiki](https://github.com/ivanovlk/PallyPower/wiki/PallyPower-Addon-Wiki)
 
 ## Changelog
 - 09.04.26 - Add paladin selector to Assignment Grid top-left area. This way you can display specific paladin's individual blessings assignment (fix for feature request #25) 

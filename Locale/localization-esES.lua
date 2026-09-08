@@ -141,7 +141,7 @@ if ( GetLocale() == "esES" ) then
     PALLYPOWER_MESSAGE_BB_CENTERED = "PallyPowerBuffBar centrada en la pantalla."
     PALLYPOWER_MESSAGE_BB_NOTFOUND = "No se encuentra el cuadro PallyPowerBuffBar."
 
-    PALLYPOWER_MESSAGE_NEWVERSION = "Nueva versión de PallyPowerTW disponible"
+    PALLYPOWER_MESSAGE_NEWVERSION = "Nueva versión de PallyPower disponible"
 
     PALLYPOWER_FREEASSIGN = "Asignación libre"
     PALLYPOWER_FREEASSIGN_DESC = "Permite a otros cambiar tus bendiciones sin ser líder de party/raid"

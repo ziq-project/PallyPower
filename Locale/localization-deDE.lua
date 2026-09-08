@@ -142,7 +142,7 @@ if ( GetLocale() == "deDE" ) then
     PALLYPOWER_MESSAGE_BB_CENTERED = "PallyPowerBuffBar zentriert auf dem Bildschirm."
     PALLYPOWER_MESSAGE_BB_NOTFOUND = "Frame PallyPowerBuffBar nicht gefunden."
   
-    PALLYPOWER_MESSAGE_NEWVERSION = "Neue Version von PallyPowerTW verfügbar"
+    PALLYPOWER_MESSAGE_NEWVERSION = "Neue Version von PallyPower verfügbar"
 
     PALLYPOWER_FREEASSIGN = "Freie Zuweisung"
     PALLYPOWER_FREEASSIGN_DESC = "Erlaube anderen, deine Segnungen zu ändern, ohne Gruppenanführer / Schlachtzugsassistent zu sein."
